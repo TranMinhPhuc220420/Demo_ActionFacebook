@@ -1,0 +1,100 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  widows: 100%;
+  background: #f8f8f8;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fbc2eb), to(#a6c1ee));
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  height: 400px;
+  width: 600px;
+  position: relative;
+}
+
+#main .group-action {
+  background: #fff;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  border-top: 1px solid #ddd;
+}
+
+#main .group-action button {
+  font-family: "Baloo Tamma 2", cursive;
+  height: 100%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border: none;
+  background: #fff;
+}
+
+#main .group-action button.like-action {
+  border-right: 1px solid #ddd;
+  width: 20%;
+}
+
+#main .group-action button.comment-action {
+  border-right: 1px solid #ddd;
+  width: 60%;
+}
+
+#main .group-action button.share-action {
+  width: 18.5%;
+}
+
+#main .group-action div.like-reaction-icon {
+  z-index: -1;
+  cursor: pointer;
+  background: #fff;
+  height: 40px;
+  opacity: 0;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  position: absolute;
+  top: 0px;
+  border-radius: 50px;
+}
+
+#main .group-action div.like-reaction-icon .lists-action .action-item {
+  display: inline-block;
+  width: 40px;
+}
+
+#main .group-action div.like-reaction-icon .lists-action .action-item img {
+  border-radius: 50px;
+  -webkit-transition: 0.25s all;
+  transition: 0.25s all;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  width: 40px;
+}
+
+#main .group-action div.like-reaction-icon .lists-action .action-item:hover img {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+  width: 40px;
+}
+
+#main .group-action div.like-reaction-icon.show {
+  opacity: 1;
+  top: -45px;
+  z-index: 99;
+}
+/*# sourceMappingURL=style.css.map */
